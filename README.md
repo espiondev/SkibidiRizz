@@ -10,6 +10,8 @@ PyPi dependancies are in requirements.txt
 # Planned features
 
 - Password authentication
+- Musescore search
+- Better UX (buttons, slash commands)
 
 # Instructions
 
@@ -18,3 +20,7 @@ PyPi dependancies are in requirements.txt
 3. Create a `token.txt` file in the same directory as `main.py` and paste the token into the file
 4. Run the python file
 5. Use the /start command to start the bot
+
+# Known issues
+
+Any bugs relating to downloading music are caused by [dl-librescore](https://github.com/LibreScore/dl-librescore)

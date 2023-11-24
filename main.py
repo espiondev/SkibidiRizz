@@ -59,6 +59,13 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             stderr=subprocess.PIPE,
             text=True,
         )
+        if len(os.listdir(f"tmp/{folder_name}")) == 0:
+            shutil.rmtree(f"tmp/{folder_name}")
+            await context.bot.send_message(
+                chat_id=update.effective_chat.id,
+                text="Operation failed",
+            )
+            return
         file_path = f"tmp/{folder_name}/{os.listdir(f'tmp/{folder_name}')[0]}"
         context.user_data["state"] = ENTER_LINK
         if user_data[user.id]["filetype"] == "mp3":
