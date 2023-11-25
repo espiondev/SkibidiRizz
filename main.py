@@ -38,7 +38,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         context.user_data["state"] = PICK_FILETYPE
 
     else:
-        if text not in ["mp3", "midi", "pdf"]:
+        if text.lower().strip() not in ["mp3", "midi", "pdf"]:
             msg = "Invalid file type."
             await context.bot.send_message(chat_id=update.effective_chat.id, text=msg)
             return
