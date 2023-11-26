@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "skibidirizz"
+version = "0.1.0"
+description = "Telegram bot for downloading music from MuseScore"
+authors = ["espiondev"]
+license = "GPL-3.0"
+readme = "README.md"
+homepage = "https://github.com/espiondev/SkibidiRizz"
+
+[tool.poetry.urls]
+"Issues" = "https://github.com/espiondev/SkibidiRizz/issues"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-telegram-bot = "20.6"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+ruff = "^0.1.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"

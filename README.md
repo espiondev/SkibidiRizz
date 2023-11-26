@@ -2,7 +2,7 @@
 
 Telegram bot for downloading music from MuseScore
 
-# Dependancies
+# Dependencies
 
 PyPi dependancies are in requirements.txt  
 [NodeJS](https://nodejs.org/) must be installed with a user PATH entry (a global entry will not be recognized)
@@ -23,4 +23,7 @@ PyPi dependancies are in requirements.txt
 
 # Known issues
 
-Any bugs relating to downloading music are caused by [dl-librescore](https://github.com/LibreScore/dl-librescore)
+Any bugs relating to downloading music are most likely caused by [dl-librescore](https://github.com/LibreScore/dl-librescore), so file an issue over there!
+
+# Development
+See [DEVELOPMENT.md](./DEVELOPMENT.md "Development Intructions")
