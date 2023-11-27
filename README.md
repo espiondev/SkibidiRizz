@@ -4,7 +4,7 @@ Telegram bot for downloading music from MuseScore
 
 # Dependencies
 
-PyPi dependancies are in requirements.txt  
+PyPi dependencies are installed with [poetry](https://python-poetry.org/).
 [NodeJS](https://nodejs.org/) must be installed with a user PATH entry (a global entry will not be recognized)
 
 # Planned features
@@ -13,13 +13,13 @@ PyPi dependancies are in requirements.txt
 - Musescore search
 - Better UX (buttons, slash commands)
 
-# Instructions
+# Usage
 
 1. Register a Telegram bot with [@BotFather](https://t.me/BotFather)
 2. Find its token, right after the line "`Use this token to access the HTTP API:`"
-3. Create a `token.txt` file in the same directory as `main.py` and paste the token into the file
-4. Run the python file
-5. Use the /start command to start the bot
+3. Create a `token.txt` file in `%APPDATA%\skibidirizz\` on windows or `$HOME/.config/skibidirizz/` on linux (Alternatively, pass the file path as an argument to the `-t` or `--token` options)
+4. Run `python -m skibidirizz` to start the bot
+5. In Telegram, use the /start command to start the bot or reset its state
 
 # Known issues
 
